@@ -91,20 +91,20 @@ void RunAsConsole(string license, string testEmail, string dataPath)
 
 		// Print output
 		cout << "\n============================== OUTPUT ==============================\n" << endl;
-		cout << "\n\tEmail Object Information:" << endl;
-		cout << "\t                    Email: " + string(dataContainer.Email)																				<< endl;
-		cout << "\t              MailBoxName: " + string(emailObject->mdEmailObj->GetMailBoxName())									<< endl;
-		cout << "\t               DomainName: " + string(emailObject->mdEmailObj->GetDomainName())									<< endl;
-		cout << "\t           TopLevelDomain: " + string(emailObject->mdEmailObj->GetTopLevelDomain())							<< endl;
-		cout << "\tTopLevelDomainDescription: " + string(emailObject->mdEmailObj->GetTopLevelDomainDescription())		<< endl;
-		cout << "\t             Result Codes: " + dataContainer.ResultCodes																					<< endl;
+		cout << "\n\t     Email Object Information:" << endl;
+		cout << "\t                       Email: " + string(dataContainer.Email)																				<< endl;
+		cout << "\t                Mailbox Name: " + string(emailObject->mdEmailObj->GetMailBoxName())									<< endl;
+		cout << "\t                 Domain Name: " + string(emailObject->mdEmailObj->GetDomainName())									<< endl;
+		cout << "\t            Top-Level Domain: " + string(emailObject->mdEmailObj->GetTopLevelDomain())							<< endl;
+		cout << "\tTop-Level Domain Description: " + string(emailObject->mdEmailObj->GetTopLevelDomainDescription())		<< endl;
+		cout << "\t                Result Codes: " + dataContainer.ResultCodes																					<< endl;
 
 		list<string> rs = SplitResultCodes(dataContainer.ResultCodes, ",");
 		list<string>::iterator it;
 
 		for (it = rs.begin(); it != rs.end(); it++)
 		{
-			printf("        %s: %s", it->c_str(), emailObject->mdEmailObj->GetResultCodeDescription(it->c_str(), emailObject->mdEmailObj->ResultCodeDescriptionLong));
+			printf("           %s: %s", it->c_str(), emailObject->mdEmailObj->GetResultCodeDescription(it->c_str(), emailObject->mdEmailObj->ResultCodeDescriptionLong));
 			cout << endl;
 		}
 

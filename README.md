@@ -9,20 +9,19 @@ For the latest Melissa Email Object release notes, please visit: https://release
 
 The console will ask the user for:
 
-- Email Address
+- Email 
 
 And return 
 
-- Mail Box Name
+- Mailbox Name
 - Domain Name
 - Top-Level Domain Name
 - Top-Level Domain Description
-- ResultCodes
+- Result Codes
 
 ## Tested Environments
-- Windows 64-bit Microsoft Visual C++ 14.34
-- Powershell 5.1
-- Melissa data files for 2023-06
+- Windows 10 64-bit Microsoft Visual C++ 14.34, Powershell 5.1
+- Melissa data files for 2023-07
 - Nmake 14.34
 - Visual Studio 2022 Developer Command Prompt v17.4.2 64-bit
 
@@ -44,7 +43,7 @@ This is the c++ code of the Melissa Object.
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 #### Visual Studio Developer Command Prompt
-It is important to note that you must be able to initialize the Visual Studio Developer Command Prompt environment for `x86_x64` in order to test the Melissa Phone Object. The Visual Studio Developer Command Prompt should already be downloaded if you have Microsoft Visual Studio installed. 
+It is important to note that you must be able to initialize the Visual Studio Developer Command Prompt environment for `x86_x64` in order to test the Melissa Email Object. The Visual Studio Developer Command Prompt should already be downloaded if you have Microsoft Visual Studio installed. 
 
 To check if you are able to intialize the Visual Studio Developer Command Prompt for `x86_x64`, you can open the start menu and search for `x86_x64 Cross Tools Command Prompt for VS 2022`. If this program exists, then you may continue to the next steps.
 
@@ -60,7 +59,7 @@ The console will then prompt you with the following warning shown in the image b
 
 #### Download this project
 ```
-$ git clone https://github.com/MelissaData/EmailObject-Cpp.git
+$ git clone https://github.com/MelissaData/EmailObject-Cpp
 $ cd EmailObject-Cpp
 ```
 
