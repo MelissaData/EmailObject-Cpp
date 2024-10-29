@@ -23,7 +23,7 @@ And return
 
 ## Tested Environments
 - Windows 10 64-bit Microsoft Visual C++ 14.34, Powershell 5.1
-- Melissa data files for 2024-09
+- Melissa data files for 2024-10
 - Nmake 14.34
 - Visual Studio 2022 Developer Command Prompt v17.4.2 64-bit
 
@@ -61,8 +61,8 @@ The console will then prompt you with the following warning shown in the image b
 
 #### Download this project
 ```
-$ git clone https://github.com/MelissaData/EmailObject-Cpp
-$ cd EmailObject-Cpp
+git clone https://github.com/MelissaData/EmailObject-Cpp
+cd EmailObject-Cpp
 ```
 
 #### Set up Melissa Updater 
@@ -95,24 +95,24 @@ When you have modified the script to match your data location, let's run the scr
 
     The script will prompt the user for an email address, then use the provided email to test Email Object. For example:
     ```
-    $ .\MelissaEmailObjectWindowsCpp.ps1
+    .\MelissaEmailObjectWindowsCpp.ps1
     ```
     For quiet mode:
     ```
-    $ .\MelissaEmailObjectWindowsCpp.ps1 -quiet
+    .\MelissaEmailObjectWindowsCpp.ps1 -quiet
     ```
     
 - Command Line 
 
     You can pass an email address in ```-email``` parameter and a license string in ```-license``` parameter to test Email Object. For example:
     ```
-    $ .\MelissaEmailObjectWindowsCpp.ps1 -email "info@melissa.com"
-    $ .\MelissaEmailObjectWindowsCpp.ps1 -email "info@melissa.com" -license "<your_license_string>"
+    .\MelissaEmailObjectWindowsCpp.ps1 -email "info@melissa.com"
+    .\MelissaEmailObjectWindowsCpp.ps1 -email "info@melissa.com" -license "<your_license_string>"
     ```
     For quiet mode:
     ```
-    $ .\MelissaEmailObjectWindowsCpp.ps1 -email "info@melissa.com" -quiet
-    $ .\MelissaEmailObjectWindowsCpp.ps1 -email "info@melissa.com" -license "<your_license_string>" -quiet
+    .\MelissaEmailObjectWindowsCpp.ps1 -email "info@melissa.com" -quiet
+    .\MelissaEmailObjectWindowsCpp.ps1 -email "info@melissa.com" -license "<your_license_string>" -quiet
     ```
 
 This is the expected output from a successful setup for interactive mode:
